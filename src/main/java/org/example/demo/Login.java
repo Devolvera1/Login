@@ -16,8 +16,11 @@ public class Login extends Application {
         );
 
         Scene scene = new Scene(loader.load());
+        scene.getStylesheets().add(
+                getClass().getResource("/org/example/demo/Login.css").toExternalForm());
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
+
         stage.show();
         stage.centerOnScreen();
     }
